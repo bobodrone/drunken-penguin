@@ -18,3 +18,9 @@ apt-get install spotify-client
 curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
 echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
 sudo apt update && sudo apt install -y signal-desktop
+
+# Discord
+TEMP_DEB="$(mktemp)" &&
+wget -O "$TEMP_DEB" 'https://discordapp.com/api/download?platform=linux&format=deb' &&
+sudo dpkg -i "$TEMP_DEB"
+rm -f "$TEMP_DEB"
