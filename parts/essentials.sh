@@ -7,3 +7,6 @@ sudo apt-get install network-manager-openvpn-gnome -y
 
 # xz
 sudo apt-get install xz-utils -y
+
+# caffeine
+sudo apt-get install -y gnome-shell-extension-caffeine

@@ -12,7 +12,7 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update
 
 # 4. Install Spotify
-apt-get install spotify-client
+sudo apt-get install spotify-client
 
 # Signal
 curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
